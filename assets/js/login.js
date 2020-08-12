@@ -7,7 +7,7 @@ $(function() {
 
     //2. 点击去登录
     $("#link_login").on("click", function() {
-        $(".ligin-box").show()
+        $(".login-box").show()
         $(".reg-box").hide()
     });
 
