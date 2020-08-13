@@ -36,7 +36,7 @@ $(function() {
         })
     });
 
-    //5. 输入账号登录后：监听登录按钮，阻止默认提交，发起post请求，判断账号在后台有没有，无就登录失败，有就跳转到首页，且将响应的token字符串存到本地存储方便查看 
+    //5. 输入账号登录后：监听登录表单，阻止默认提交，发起post请求，判断账号在后台有没有，无就登录失败，有就跳转到首页，且将响应的token字符串存到本地存储方便查看 
     $('#form_login').submit(function(e) {
         e.preventDefault()
         $.ajax({
@@ -47,7 +47,7 @@ $(function() {
                 if (res.status !== 0) return layer.msg('登录失败！')
                 layer.msg('登录成功！')
                 localStorage.setItem('token', res.token)
-                location.href = '/index.html' //跳转到后台主页
+                location.href = '/三-大事件项目/index.html'; //跳转到后台主页
             }
         })
     })
