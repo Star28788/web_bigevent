@@ -6,7 +6,7 @@ $(function() {
         layer.confirm('确定退出登录?', { icon: 3, title: '提示' }, function(index) {
             //do something
             localStorage.removeItem('token')
-            location.href = '/三-大事件项目/index.html'
+            location.href = '/S-bigEvent/index.html'
             layer.close(index); //关闭询问框，index是自带索引，不需管
         });
     })
@@ -31,7 +31,7 @@ function getUserInfo() {
         //     console.log(res)
         //     if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败！") {
         //         localStorage.removeItem('token')
-        //         location.href = '/三-大事件项目/login.html'
+        //         location.href = '/S-bigEvent/login.html'
         //     }
         // }
     })

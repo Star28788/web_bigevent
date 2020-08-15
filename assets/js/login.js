@@ -47,7 +47,7 @@ $(function() {
                 if (res.status !== 0) return layer.msg('登录失败！')
                 layer.msg('登录成功！')
                 localStorage.setItem('token', res.token)
-                location.href = '/三-大事件项目/index.html'; //跳转到后台主页
+                location.href = '/S-bigEvent/index.html'; //跳转到后台主页
             }
         })
     })
