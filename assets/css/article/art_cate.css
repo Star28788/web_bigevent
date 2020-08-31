@@ -1,0 +1,27 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #f2f3f5;
+}
+
+
+/* 文章类别和添加按钮的完整 */
+
+.layui-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* 添加按钮 修改按钮 的弹出层样式 */
+
+#form-add,
+#form-edit {
+    padding: 20px;
+}
